@@ -1,0 +1,29 @@
+{
+  "name": "pocci-server",
+  "version": "1.0.0",
+  "description": "REST Backend server for pocci",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Assembly-WebCrew/pocci.git"
+  },
+  "keywords": [
+    "pocci",
+    "rest",
+    "cms",
+    "server"
+  ],
+  "author": "Assembly Webcrew",
+  "contributors": [
+    {"name": "Joona Romppanen", "email": "joona.romppanen@gmail.com"},
+    {"name": "Ville Lahdenvuo", "email": "ville.lahdenvuo@gmail.com"}
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Assembly-WebCrew/pocci/issues"
+  },
+  "homepage": "https://github.com/Assembly-WebCrew/pocci#readme"
+}
