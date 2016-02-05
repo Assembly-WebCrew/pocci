@@ -1,0 +1,32 @@
+{
+  "name": "Page",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "component": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "placeholders": {
+      "type": "hasMany",
+      "model": "Placeholder",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

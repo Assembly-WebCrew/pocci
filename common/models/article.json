@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "Versioned": {}
+  },
   "properties": {
     "title": {
       "type": "string",
@@ -20,6 +23,16 @@
     "author": {
       "type": "belongsTo",
       "model": "Person",
+      "foreignKey": ""
+    },
+    "categories": {
+      "type": "hasAndBelongsToMany",
+      "model": "Category",
+      "foreignKey": ""
+    },
+    "tags": {
+      "type": "hasAndBelongsToMany",
+      "model": "Tag",
       "foreignKey": ""
     }
   },

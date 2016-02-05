@@ -39,5 +39,21 @@
   "Person": {
     "dataSource": "db",
     "public": true
+  },
+  "Category": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Tag": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Page": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Placeholder": {
+    "dataSource": "db",
+    "public": true
   }
 }
