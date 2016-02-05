@@ -8,6 +8,19 @@
 			],
 			"folder_exclude_patterns":
 			[
+				"backend",
+				"frontend"
+			],
+			"name": "Project",
+			"path": "."
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.log"
+			],
+			"folder_exclude_patterns":
+			[
 				"node_modules",
 				"dist"
 			],
