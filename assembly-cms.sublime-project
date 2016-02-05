@@ -1,0 +1,39 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.log"
+			],
+			"folder_exclude_patterns":
+			[
+				"node_modules",
+				"dist"
+			],
+			"name": "Frontend",
+			"path": "frontend"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.log"
+			],
+			"folder_exclude_patterns":
+			[
+				"node_modules",
+				"frontend"
+			],
+			"name": "Backend",
+			"path": "backend"
+		}
+	],
+	"settings":
+	{
+		"rulers":
+		[
+			80
+		],
+		"shift_tab_unindent": true
+	}
+}
