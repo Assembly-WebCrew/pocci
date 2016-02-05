@@ -1,0 +1,28 @@
+{
+  "name": "Article",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
