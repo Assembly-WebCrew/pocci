@@ -6,7 +6,7 @@ function createCancellationToken(statusCode = 500, message = 'An unknown error h
 	return token;
 }
 
-export default (Model, options) => {
+module.exports = (Model, options) => {
 	Model.defineProperty('versionNumber', {type: 'number', default: 0});
 	Model.defineProperty('deleted', {type: 'boolean', default: false});
 

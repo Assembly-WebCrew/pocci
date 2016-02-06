@@ -26,4 +26,4 @@ boot(server, __dirname, function(err) {
 	server.start();
 });
 
-export default server;
+module.exports = server;

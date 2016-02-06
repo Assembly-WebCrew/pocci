@@ -35,7 +35,7 @@ function validateTranslationValues(translations) {
 	}
 }
 
-export default (Model, options) => {
+module.exports = (Model, options) => {
 	const defaults = populateDefaultValue(options.properties);
 	Model.defineProperty('translations', {type: 'object', default: defaults});
 	// TODO: Before save validate object structure
