@@ -1,11 +1,7 @@
-require('babel-polyfill');
-require('babel-register')({
-	presets: ['es2015', 'stage-0']
-});
-var loopback = require('loopback');
-var boot = require('loopback-boot');
+import loopback from 'loopback'
+import boot from 'loopback-boot'
 
-var app = module.exports = loopback();
+const app = loopback();
 
 app.start = function() {
   // start the web server
@@ -26,6 +22,8 @@ boot(app, __dirname, function(err) {
   if (err) throw err;
 
   // start the server if `$ node server.js`
-  if (require.main === module)
-    app.start();
+  //if (require.main === module)
+	app.start();
 });
+
+export default app;

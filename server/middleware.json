@@ -30,7 +30,14 @@
       "enabled": false
     }
   },
-  "session": {},
+  "session:after": {
+    "./middleware/internationalization": {
+      "params": {}
+    },
+		"./middleware/multitenancy": {
+			"params": {}
+		}
+  },
   "auth": {},
   "parse": {},
   "routes": {
