@@ -1,5 +1,3 @@
-import server from '../server'
-
 function createError(statusCode, message) {
 	let error = new Error(message);
 	error.statusCode = statusCode;
@@ -7,11 +5,11 @@ function createError(statusCode, message) {
 }
 
 module.exports = () => (req, res, next) => {
-	const Site = server.models.Site;
-	const siteId = req.query.site;
+	const Site = req.app.models.Site;
+	const siteSlug = req.query.site;
 	try {
-		if (siteId) { // Check query string for requested site
-			Site.findOne({where: {id: siteId}}, (err, site) => {
+		if (siteSlug) { // Check query string for requested site
+			Site.findOne({where: {slug: siteSlug}}, (err, site) => {
 				if (err) return next(err);
 				if (site === null) throw createError(404, 'Requested site was not found.');
 				req.site = site;

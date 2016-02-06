@@ -1,6 +1,11 @@
 # Pocci
 A proof of concept. For making this more enjoyable.
 
+# Querying Site specific data
+
+To query site specific data you must either add `?site=<site_slug>` to your request query string or pass in the
+value `{where: {siteSlug: <site_slug>}}` as a [filter](https://docs.strongloop.com/display/public/LB/Where+filter) in your query string.
+
 # Development Seed
 
 The development seed contains the following pre-populated values:
