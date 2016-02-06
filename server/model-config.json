@@ -55,5 +55,9 @@
   "Placeholder": {
     "dataSource": "db",
     "public": true
+  },
+  "Site": {
+    "dataSource": "db",
+    "public": true
   }
 }

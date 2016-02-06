@@ -25,6 +25,11 @@
       "type": "hasMany",
       "model": "Placeholder",
       "foreignKey": ""
+    },
+    "site": {
+      "type": "belongsTo",
+      "model": "Site",
+      "foreignKey": ""
     }
   },
   "acls": [],

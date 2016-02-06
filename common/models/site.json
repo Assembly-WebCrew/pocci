@@ -1,31 +1,28 @@
 {
-  "name": "Placeholder",
+  "name": "Site",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "location": {
+    "domain": {
       "type": "string",
       "required": true
     },
-    "component": {
+    "slug": {
       "type": "string",
       "required": true
     },
-    "state": {
-      "type": "object"
+    "displayName": {
+      "type": "string"
+    },
+    "default": {
+      "type": "boolean"
     }
   },
   "validations": [],
-  "relations": {
-    "page": {
-      "type": "belongsTo",
-      "model": "Page",
-      "foreignKey": ""
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

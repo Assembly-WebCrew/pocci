@@ -7,12 +7,12 @@
   },
   "mixins": {
     "Versioned": {},
-		"Translatable": {
-			"properties": [
-				"title",
-				"body"
-			]
-		}
+    "Translatable": {
+      "properties": [
+        "title",
+        "body"
+      ]
+    }
   },
   "properties": {
     "title": {
@@ -39,6 +39,11 @@
     "tags": {
       "type": "hasAndBelongsToMany",
       "model": "Tag",
+      "foreignKey": ""
+    },
+    "site": {
+      "type": "belongsTo",
+      "model": "Site",
       "foreignKey": ""
     }
   },

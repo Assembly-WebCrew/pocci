@@ -24,8 +24,8 @@
     }
   },
   "legacyExplorer": false,
-	"availableLanguages": [
-		"en",
-		"fi"
-	]
+  "availableLanguages": [
+    "en",
+    "fi"
+  ]
 }
