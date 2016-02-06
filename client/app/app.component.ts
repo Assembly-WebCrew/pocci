@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
-import {FrontpageComponent} from './pages/frontpage.component';
+import {FrontpageComponent} from './pages/frontpage/frontpage.component';
 
 @Component({
 	selector: 'asm-app',

@@ -4,7 +4,7 @@ import S from 'string';
 
 @Component({
 	selector: 'asm-frontpage',
-	template: '<h1>{{ eventName }}</h1>'
+	templateUrl: '/app/pages/frontpage/frontpage.template.html'
 })
 export class FrontpageComponent {
 	private eventSlug: string

@@ -33,7 +33,7 @@ System.register(['angular2/core', 'angular2/router', 'string'], function(exports
                 FrontpageComponent = __decorate([
                     core_1.Component({
                         selector: 'asm-frontpage',
-                        template: '<h1>{{ eventName }}</h1>'
+                        templateUrl: '/app/pages/frontpage/frontpage.template.html'
                     }), 
                     __metadata('design:paramtypes', [router_1.RouteParams])
                 ], FrontpageComponent);
