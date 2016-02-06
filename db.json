@@ -1,0 +1,38 @@
+{
+  "ids": {
+    "User": 2,
+    "AccessToken": 2,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Article": 2,
+    "Person": 1,
+    "Category": 1,
+    "CategoryArticle": 1,
+    "Tag": 1,
+    "TagArticle": 1,
+    "Page": 1,
+    "Placeholder": 1,
+    "Site": 3
+  },
+  "models": {
+    "User": {
+      "1": "{\"password\":\"$2a$10$OSx.N5GNZIG2PTfYQfgxPuczUwSENtnL7AQu05.3amDtzQANwGGQS\",\"email\":\"admin@pocci.com\",\"id\":1}"
+    },
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Article": {},
+    "Person": {},
+    "Category": {},
+    "CategoryArticle": {},
+    "Tag": {},
+    "TagArticle": {},
+    "Page": {},
+    "Placeholder": {},
+    "Site": {
+      "1": "{\"domain\":\"localhost\",\"slug\":\"development\",\"displayName\":\"Default Development Site\",\"default\":true,\"id\":1}"
+    }
+  }
+}

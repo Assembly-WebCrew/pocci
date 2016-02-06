@@ -1,16 +1,16 @@
 import loopback from 'loopback'
 import boot from 'loopback-boot'
 
-const app = loopback();
+const server = loopback();
 
-app.start = function() {
+server.start = function() {
   // start the web server
-  return app.listen(function() {
-    app.emit('started');
-    var baseUrl = app.get('url').replace(/\/$/, '');
+  return server.listen(function() {
+    server.emit('started');
+    var baseUrl = server.get('url').replace(/\/$/, '');
     console.log('Web server listening at: %s', baseUrl);
-    if (app.get('loopback-component-explorer')) {
-      var explorerPath = app.get('loopback-component-explorer').mountPath;
+    if (server.get('loopback-component-explorer')) {
+      var explorerPath = server.get('loopback-component-explorer').mountPath;
       console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
     }
   });
@@ -18,12 +18,12 @@ app.start = function() {
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
-boot(app, __dirname, function(err) {
+boot(server, __dirname, function(err) {
   if (err) throw err;
 
   // start the server if `$ node server.js`
   //if (require.main === module)
-	app.start();
+	server.start();
 });
 
-export default app;
+export default server;
