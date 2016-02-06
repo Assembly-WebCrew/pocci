@@ -10,9 +10,7 @@ module.exports = (Model, options) => {
 	Model.defineProperty('versionNumber', {type: 'number', default: 0});
 	Model.defineProperty('deleted', {type: 'boolean', default: false});
 
-	// TODO: Fix duplicate row insertion on update
 	Model.observe('before save', async (ctx, next) => {
-		console.log('saaaave', ctx.isNewInstance);
 		if (ctx.isNewInstance) return next();
 
 		let currentState = ctx.currentInstance ? ctx.currentInstance : ctx.data;
@@ -23,7 +21,7 @@ module.exports = (Model, options) => {
 
 		oldState.unsetAttribute('id');
 		ctx.data.versionNumber = oldState.versionNumber + 1;
-		console.log(ctx.currentInstance, ctx.data);
+		// TODO: Track down and fix duplicate row insertion on update
 		await ctx.Model.create(oldState);
 	});
 
