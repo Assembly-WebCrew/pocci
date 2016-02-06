@@ -23,7 +23,9 @@
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
-    "Article": {},
+    "Article": {
+      "1": "{\"title\":\"Hoc est pulchellus delicatus\",\"body\":\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl eros, commodo vitae luctus quis, dignissim feugiat eros. Vestibulum egestas ligula magna, ut vestibulum purus interdum vitae. Sed porttitor ipsum metus, at luctus tellus accumsan quis. Maecenas sed dolor orci. Aenean neque eros, tempus quis mi eget, tincidunt ullamcorper eros. Aliquam erat volutpat. Pellentesque tempor felis nec egestas molestie. Vestibulum sit amet augue id odio faucibus maximus id rhoncus dolor.</p><p>Duis mattis risus ut dolor aliquet molestie. In eu scelerisque erat. Nunc sed nunc ac ex porta accumsan eu non quam. Praesent ullamcorper mollis mauris, sit amet ultrices massa hendrerit vitae. Vestibulum malesuada porta erat, eget tristique quam malesuada eu. Etiam non tempor nisi. Pellentesque mattis nisi nec leo condimentum, sed maximus tortor tempus. Maecenas nec purus ligula.</p><p>Nam et ornare est, sit amet aliquet nisl. Nam ornare augue risus. Nunc vitae ultricies diam. Sed suscipit sit amet sem varius congue. Nunc finibus nibh id eleifend viverra. Mauris mi ante, gravida ac sollicitudin id, vehicula vel est. Fusce ultricies ornare nulla, id euismod urna egestas et. Nunc mauris tellus, auctor ut bibendum sed, lacinia vel turpis. Praesent varius, mi iaculis dictum porttitor, lacus erat ornare libero, quis ullamcorper nisl odio ac purus. Donec tincidunt, nisi id porta venenatis, sapien velit venenatis mi, vel finibus felis magna in turpis. Aliquam elementum facilisis maximus. Nulla vel sapien magna. Suspendisse tempus ornare sem in sagittis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam in turpis risus.</p><p>Phasellus ullamcorper in neque nec viverra. Curabitur auctor pulvinar sem, at pharetra libero porta sed. Vestibulum iaculis euismod elementum. Nulla porttitor purus a tristique pharetra. Quisque tristique, nunc vitae tincidunt fringilla, erat urna consectetur augue, sit amet volutpat nunc risus sagittis lectus. Aliquam tincidunt augue id interdum tincidunt. Praesent egestas libero iaculis nisl fermentum, sed laoreet metus consequat. Maecenas eu dignissim sem, sed tristique justo. Suspendisse ex tortor, dictum luctus augue imperdiet, vehicula rhoncus nunc. Sed vestibulum velit non tortor varius, in cursus sem pharetra.</p><p>Duis auctor orci urna, in ornare lectus dignissim rutrum. Cras a molestie urna. Sed efficitur nibh non nisi condimentum vehicula. In hendrerit lobortis velit sit amet maximus. Nam porta justo viverra erat sodales, ut tincidunt nulla pulvinar. Donec in quam sit amet odio varius posuere vitae sit amet ligula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\",\"id\":1,\"authorId\":1,\"siteId\":1}"
+    },
     "Person": {},
     "Category": {},
     "CategoryArticle": {},
@@ -32,7 +34,8 @@
     "Page": {},
     "Placeholder": {},
     "Site": {
-      "1": "{\"domain\":\"localhost\",\"slug\":\"development\",\"displayName\":\"Default Development Site\",\"default\":true,\"id\":1}"
+      "1": "{\"domain\":\"localhost\",\"slug\":\"development\",\"displayName\":\"Development Site\",\"default\":false,\"id\":1}",
+			"2": "{\"domain\":\"localhost\",\"slug\":\"production\",\"displayName\":\"Default Production Site\",\"default\":true,\"id\":2}"
     }
   }
 }
