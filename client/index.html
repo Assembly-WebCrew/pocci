@@ -20,6 +20,12 @@
 		<!-- 2. Configure SystemJS -->
 		<script>
 			System.config({
+			  paths: {
+			    '*': './node_modules/*',
+			    'app/*': 'app/*'
+			  },
+			  format: 'cjs',
+			  packageConfigPaths: ['./node_modules/*/package.json'],
 				packages: {
 					app: {
 						format: 'register',

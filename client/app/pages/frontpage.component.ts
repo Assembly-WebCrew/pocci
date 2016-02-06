@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, RouteParams} from 'angular2/router';
+import S from 'string';
 
 @Component({
 	selector: 'asm-frontpage',
@@ -14,6 +15,6 @@ export class FrontpageComponent {
 
 	ngOnInit() {
 		this.eventSlug = this._routeParams.get('event');
-		this.eventName = `ASSEMBLY ${this.eventSlug}`;
+		this.eventName = `ASSEMBLY ${S(this.eventSlug).capitalize()}`;
 	}
 }

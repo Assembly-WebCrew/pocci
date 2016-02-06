@@ -13,6 +13,9 @@
     },
     "moment/moment-node.d.ts": {
       "commit": "f7164a47ffe5e9a7ea2f4bec8fc4009347c64f6d"
+    },
+    "lodash/lodash.d.ts": {
+      "commit": "3187b8551a50311a96dd823a50f2a5cd2261d495"
     }
   }
 }

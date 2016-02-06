@@ -17,7 +17,9 @@
 		{
 			"file_exclude_patterns":
 			[
-				"*.log"
+				"*.log",
+				"*.js",
+				"*.map"
 			],
 			"folder_exclude_patterns":
 			[
