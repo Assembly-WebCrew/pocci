@@ -1,6 +1,6 @@
 import path from 'path'
 
-export default (server) => {
+module.exports = (server) => {
 	const loopback = server.loopback;
 
 	server.use(loopback.static(path.join(__dirname, '..', '..', 'client')));
