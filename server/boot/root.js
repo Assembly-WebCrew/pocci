@@ -1,6 +1,10 @@
+var path = require('path');
+
 module.exports = function(server) {
-  // Install a `/` route that returns server status
-  /*var router = server.loopback.Router();
-  router.get('/', server.loopback.status());
-  server.use(router);*/
+	var loopback = server.loopback;
+
+	server.use(loopback.static(path.join(__dirname, '..', '..', 'client')));
+	server.use(function(req, res) {
+		res.sendFile(path.join(__dirname, '..', '..', 'client', 'index.html'));
+	});
 };
