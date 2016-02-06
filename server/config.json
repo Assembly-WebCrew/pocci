@@ -23,5 +23,9 @@
       "disableStackTrace": false
     }
   },
-  "legacyExplorer": false
+  "legacyExplorer": false,
+	"availableLanguages": [
+		"en",
+		"fi"
+	]
 }

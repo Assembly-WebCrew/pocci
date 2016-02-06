@@ -6,7 +6,13 @@
     "validateUpsert": true
   },
   "mixins": {
-    "Versioned": {}
+    "Versioned": {},
+		"Translatable": {
+			"properties": [
+				"title",
+				"body"
+			]
+		}
   },
   "properties": {
     "title": {

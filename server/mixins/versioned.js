@@ -1,6 +1,3 @@
-'use strict';
-const R = require('ramda');
-
 function createCancellationToken(statusCode = 500, message = 'An unknown error has occurred.') {
 	let token;
 	if (message instanceof Error) token = message;
@@ -19,7 +16,7 @@ module.exports = (Model, options) => {
 		if (ctx.isNewInstance) return next();
 
 		let currentState = ctx.currentInstance ? ctx.currentInstance : ctx.data;
-		if ((currentState.deleted && !!ctx.data.deleted)) return next(createCancellationToken(404,
+		if ((currentState.deleted && !ctx.data.deleted)) return next(createCancellationToken(404,
 			`Request with identifier ${ctx.where.id} was not found or is marked as deleted.`));
 		let oldState = await ctx.Model.findOne({where: {id: currentState.id}});
 		if (ctx.data.deleted || (currentState.deleted && !ctx.data.deleted)) return next();
